@@ -7,7 +7,6 @@ window.reset = 0
 window.run = 0
 }
 init()
-
 function setup(){
 
   createCanvas(1400, 800)

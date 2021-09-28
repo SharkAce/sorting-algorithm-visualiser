@@ -15,7 +15,7 @@
     <div style="position:absolute; top:110px; left:50px; color:white; font-size:18px; font-family: sans-serif">
 
       <div class="btn-group">
-        <button type="button" onclick="if (frames.length == frame+1) {init()}; run=1">start</button>
+        <button type="button" onclick="if (frames.length == frame+1) {init()}else{frames = selectAlg([...nums])}; run=1">start</button>
         <button type="button" onclick="reset=1">reset</button>
       </div>
       <br>
