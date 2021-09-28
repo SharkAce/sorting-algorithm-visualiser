@@ -2,7 +2,7 @@ let size = 15
 function init(){
 window.frame = 0
 window.nums = randomArr(size)
-window.frames = longInsertionSort(nums)
+window.frames = selectAlg([...nums])
 window.reset = 0
 window.run = 0
 }
