@@ -19,7 +19,7 @@ function draw(){
   strokeWeight(1.5)
   fill(250)
   textSize(40)
-  text("Sorting algorithm visualiser",850,100)
+  text("Sorting algorithm visualizer",850,100)
   fill(70)
   rect(20,90,350,600,10)
   fill(200)
