@@ -1,0 +1,13 @@
+body {
+  overflow: hidden;
+  background-color: #353535
+}
+
+main {
+  position: absolute;
+  top: 110px;
+  left: 50px;
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif
+}
