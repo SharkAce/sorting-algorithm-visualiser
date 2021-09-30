@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js></script>
-    <script src="src/algorithms.js"></script>
-    <script src="src/randomArray.js"></script>
-    <script src="src/selectAlg.js"></script>
-    <style> body {overflow :hidden} </style>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <body style= background-color:#353535>
 
-    <div style="position:absolute; top:110px; left:50px; color:white; font-size:18px; font-family: sans-serif">
+<head>
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js></script>
+  <script src="src/algorithms.js"></script>
+  <script src="src/randomArray.js"></script>
+  <script src="src/addFunction.js"></script>
+  <script src="src/getCheckedElement.js"></script>
+  <script src="src/selectAlg.js"></script>
+  <script src="src/getKeys.js"></script>
+  <script src="src/unCheckAll.js"></script>
+  <script src="src/start.js"></script>
+  <script src="main.js"></script>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Sorting</title>
+</head>
+
+<body>
+
+  <body>
+
+    <main>
 
       <div class="btn-group">
-        <button style="background-color: #404040; color : white" type="button" onclick="if (frames.length == frame+1) {init()}else{frames = selectAlg([...nums])}; run=1">start</button>
-        <button style="background-color: #404040; color : white" type="button" onclick="reset=1">reset</button>
+
       </div>
-      <br>
+
       <label for="algo">Type:</label>
-      <form>
+      <div class="table">
 
-        <input type="radio" id="lis" name="algo" value="longInsertionSort" checked>
-        <label for="lis">Long insertion sort</label><br>
+      </div>
 
-        <input type="radio" id="sis" name="algo" value="shortInsertionSort">
-        <label for="sis">Short insertion sort</label><br>
-
-        <input type="radio" id="bs" name="algo" value="bubbleSort">
-        <label for="bs">Bubble sort</label><br>
-
-        <input type="radio" id="ss" name="algo" value="selectionSort">
-        <label for="ss">Selection sort</label><br>
+    </main>
 
 
-        <br>
-        <label for="speed">Speed:</label><br>
-        <input style="background-color: #404040; color : white" type="text" id="speed" name="speed"><br>
 
-      </from>
     </div>
-    <script src="sketch.js"></script>
+
   </body>
+
 </html>
