@@ -1,5 +1,14 @@
-function selectAlg(key, input) {
-  if (document.getElementById(key).checked) {
-    return SORTING.methods[key](input) || 'undefined';
+function selectAlg (input){
+  if (document.getElementById('lis').checked){
+    return longInsertionSort(input)
+
+  } else if (document.getElementById('sis').checked){
+    return shortInsertionSort(input)
+
+  } else if (document.getElementById('bs').checked){
+  return bubbleSort(input)
+
+  } else if (document.getElementById('ss').checked){
+  return selectionSort(input)
   }
 }
