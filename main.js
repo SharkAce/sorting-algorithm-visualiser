@@ -1,5 +1,5 @@
 let size = 120;
-let width = 8;
+
 let FRAMES;
 let frame = 0;
 let run = 0;
@@ -18,36 +18,42 @@ setTimeout(() => {
   }
 
   // Initiate simulation with a sorting alg
-  init('shortInsertionSort');
+  init('insertionSort');
 }, 1);
 
 
+let wn = {
+  x: window.innerWidth - 200,
+  y: window.innerHeight
+}
+let width = 8;
 
 function setup() {
-  createCanvas(
-    window.innerWidth,
-    window.innerHeight
+  frameRate(60);
+  let canvas = createCanvas(
+    wn.x,
+    wn.y
   );
-  textAlign(CENTER)
+  console.log(wn.y)
+  canvas.parent('canvas');
+  textAlign(CENTER);
+  width = wn.x / size;
 }
 
 function draw() {
-  let speed = parseInt(document.getElementById("speed").value, 10)
-  frameRate(speed || 40)
-  background(53)
-  strokeWeight(1)
-  fill(250)
-  textSize(40)
-  text("Sorting algorithm visualizer", 850, 100)
-  fill(70)
-  rect(20, 90, 350, 600, 10)
-  fill(200)
+  background(53);
+  noFill();
+  strokeWeight(6);
+  rect(0, 0, wn.x, wn.y);
 
-  let posX = 500
+  strokeWeight(2);
+  fill(200);
+  textSize(10);
+
+  let posX = 0;
   for (let i = 0; i < FRAMES[frame].length; i++) {
-    rect(posX, 640, width - 1, -FRAMES[frame][i] * 2.8)
-    textSize(10)
-    text(FRAMES[frame][i], posX + (width - 1) / 2, 680)
+    rect(posX, wn.y, width, -FRAMES[frame][i] * (wn.y / 100));
+    // text(FRAMES[frame][i], posX + (width) / 2, 680);
     posX += width;
   }
   FRAMES.length > frame + 1 && run ? frame++ : run = 0

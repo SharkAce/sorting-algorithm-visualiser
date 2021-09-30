@@ -1,13 +1,18 @@
 body {
   overflow: hidden;
-  background-color: #353535
+  background-color: #353535;
+  display: flex;
+  margin: 0px;
 }
 
 main {
-  position: absolute;
-  top: 110px;
-  left: 50px;
   color: white;
   font-size: 18px;
-  font-family: sans-serif
+  width: 200px;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+#canvas {
+  width: fit-content;
 }
