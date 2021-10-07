@@ -16,3 +16,10 @@ main {
 #canvas {
   width: fit-content;
 }
+
+.btn {
+  background-color: grey;
+  width: 50px;
+  height: 25px;
+  margin: 5px
+}

@@ -70,6 +70,3 @@ SORTING.methods['selectionSort'] =
     }
     return frames;
   }
-
-
-console.log(SORTING)

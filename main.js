@@ -2,6 +2,8 @@ let size = 120;
 
 let FRAMES;
 let frame = 0;
+let frameRate = 60
+
 let run = 0;
 let reset = 0;
 let nums = randomArr(size);
@@ -29,18 +31,19 @@ let wn = {
 let width = 8;
 
 function setup() {
-  frameRate(60);
   let canvas = createCanvas(
     wn.x,
     wn.y
   );
-  console.log(wn.y)
+
   canvas.parent('canvas');
   textAlign(CENTER);
   width = wn.x / size;
 }
 
 function draw() {
+
+
   background(53);
   noFill();
   strokeWeight(6);
@@ -58,4 +61,9 @@ function draw() {
   }
   FRAMES.length > frame + 1 && run ? frame++ : run = 0
 
+}
+function keyPressed(){
+  if (keyCode == ENTER){
+    start()
+  }
 }
