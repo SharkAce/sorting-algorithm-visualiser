@@ -1,5 +1,4 @@
 let size = 120;
-
 let FRAMES;
 let frame = 0;
 let frameRate = 60

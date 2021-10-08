@@ -1,4 +1,5 @@
 function start() {
+  
   size = document.getElementById("Array size").value || 100
   run = 1;
   let nums = randomArr(size);
@@ -12,6 +13,5 @@ function start() {
   setTimeout(() => {
     run = 1;
   }, 100);
-  size = document.getElementById("Array size").value || 100
   width = wn.x / size
 }
